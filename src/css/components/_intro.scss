@@ -1,0 +1,180 @@
+.intro {
+    &__wrapper {
+        background-image: url("../img/introClock.png");
+        background-repeat: no-repeat;
+        background-position: right;
+        padding-top: 100px;
+        position: relative;
+        
+
+        &::after {
+            content: "";
+            display: block;
+            width: 647px;
+            height: 533px;
+            position: absolute;
+            z-index: -1;
+            top: 137px;
+            left: 60px;
+            pointer-events: none;
+            background-image: url("../img/introBg.svg");
+        }
+
+        @media (width < $breakpoint) {
+            background-position: center 200px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__title {
+        color: #202020;
+        font-size: 36px;
+        font-weight: 300;
+        margin-bottom: 105px;
+
+        strong {
+            font-size: 48px;
+            font-weight: 600;
+            text-transform: uppercase;
+
+        }
+
+        span {
+            color: $color_accent;
+        }
+
+        @media (width < $breakpoint) {
+            font-size: 16px;
+            margin-bottom: 400px;
+
+            strong {
+                font-size: 24px;
+            }
+        }
+    }
+
+    &__icons {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 96px;
+
+        @media (width < $breakpoint) {
+            gap: 6px;
+            order: 2;
+            margin-bottom: 0;
+        }
+    }
+
+    &__icon-link {
+        color: $color_icon;
+        transition: 0.3s ease;
+
+        &:hover {
+            color: $color_accent;
+        }
+
+        @media (width < $breakpoint) {
+            svg {
+                height: 30px;
+                width: auto;
+            }
+
+        }
+    }
+
+    &__btn {
+        display: block;
+        width: fit-content;
+        padding: 6px 74px;
+        border-radius: 70px;
+        border: 1px solid #dedede;
+        background: #fbfbfb;
+        font-family: Unbounded;
+        font-size: 24px;
+        color: #202020;
+        font-weight: 300;
+        margin-left: auto;
+        margin-right: 123px;
+        transition: 0.3s ease;
+
+        &:hover {
+            background-color: $color_accent;
+            color: #fff;
+        }
+
+        @media (width < $breakpoint) {
+            color: #fff;
+            background: $color-accent;
+            border-color: $color-accent;
+            margin-left: 0;
+            margin-right: 0;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            padding: 6px 20px;
+            width: 100%;
+            justify-content: center;
+
+            &--light {
+                color: $color-accent;
+                background: #fff;
+            }
+
+            &--config {
+                display: none;
+            }
+        }
+    }
+
+    &__btns-breakpoint {
+        display: none;
+        order: 1;
+        margin-bottom: 14px;
+
+
+        @media (width < $breakpoint) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-btn1 {
+            border: 1px solid $color_accent;
+            border-radius: 70px;
+            padding: 13px 88px;
+            width: 320px;
+            height: 38px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 150%;
+            color: $color-accent;
+            margin-bottom: 14px;
+        }
+
+        &-btn2 {
+            border-radius: 74px;
+            padding: 6px 53px;
+            width: 184px;
+            height: 36px;
+            background-color: $color-accent;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 150%;
+            color: $bg_main;
+        }
+
+        &-block {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+
+    &__bottom-btns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin-top: 16px;
+    }
+}

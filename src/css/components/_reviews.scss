@@ -1,0 +1,135 @@
+.reviews {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    background: #FFF;
+ 
+
+    &__title {
+        margin-bottom: 75px;
+        @media (width < $breakpoint) {
+            font-weight: 500;
+            font-size: 24px;
+
+        }
+
+    }
+
+    &__people {
+        margin-bottom: 8px;
+    }
+
+    &__btn {
+        display: inline-flex;
+        height: 36px;
+        padding: 6px 6px 6px 36px;
+        justify-content: center;
+        align-items: center;
+        gap: 109px;
+        border-radius: 36px;
+        border: 0.5px solid #DEDEDE;
+        background: #FFF;
+        color: #202020;
+        font-size: 16px;
+        font-weight: 200;
+        line-height: 150%;
+
+        @media (width < $breakpoint) {
+            border-color: $color-accent;
+            color: $color-accent;
+        }
+
+
+    }
+
+    &__avito {
+        width: 245px;
+        height: 145px;
+        border-radius: 20px;
+        background: #0D0D0D;
+        margin-bottom: 20px;
+    }
+
+    &__avito {
+        width: 245px;
+        height: 145px;
+        border-radius: 20px;
+        background: #0D0D0D;
+        color: #FFF;
+        padding-top: 20px;
+        padding-left: 36px;
+
+        &-text {
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+        }
+
+        &-textEnd {
+            color: #6C6C6C;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 200;
+            line-height: 150%;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+
+        &-clients {
+            margin-bottom: 30px;
+        }
+
+        @media (width < $breakpoint) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+
+    &__card {
+        border-radius: 20px;
+        width: 245px;
+        min-height: 302px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        color: $bg_main;
+        padding-left: 16px;
+        padding-right: 16px;
+        background-size: cover !important;
+
+
+        &-title {
+            color: #FFF;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 150%;
+            letter-spacing: -1.8px;
+            margin-top: 16px;
+
+            svg {
+                margin-left: 8px;
+            }
+        }
+
+        @media (width < $breakpoint) {
+            order: 1;
+        }
+    }
+
+    &__info {
+        @media (width < $breakpoint) {
+            order: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

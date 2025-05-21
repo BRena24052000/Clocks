@@ -1,0 +1,15 @@
+$font_family: 'Unbounded', 'Helvetica',' Arial', sans-serif;
+$text_main: #000;
+$color_accent: #3d8144;
+$bg_main: #F1F1F1;
+$color_icon: #DEDEDE;
+$breakpoint: 1000px;
+
+
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

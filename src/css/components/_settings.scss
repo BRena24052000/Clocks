@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: $font_family;
+    color: $text_main;
+    background-image: url('../img/gridBg.svg');
+    // background-color: $bg_main;
+}
+
+.container {
+    max-width: calc(1040px + 15px * 2);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h2 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    @media (width<$breakpoint) {
+        font-size: 24px;
+        text-align: center;
+    }
+
+}
+

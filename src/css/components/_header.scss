@@ -1,0 +1,87 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 8px 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px;
+
+    &__btn-buy {
+        @media (max-width: $breakpoint) {
+            display: none;
+        }
+    }
+
+    &__tel {
+        @media (max-width: $breakpoint) {
+            display: none;
+        }
+    }
+
+    &__wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 16px;
+    }
+
+    &__logo {
+        font-weight: bold;
+        font-size: 18px;
+
+    }
+
+    &__list {
+        display: flex;
+        gap: 40px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        @media (max-width: $breakpoint) {
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: white;
+            gap: 20px;
+            padding: 20px;
+            display: none;
+        }
+    }
+
+    &__link {
+        color: #6C6C6C;
+        font-size: 16px;
+        font-weight: 300;
+        text-decoration: none;
+        cursor: pointer;
+
+
+
+        &:hover {
+            color: $color-accent;
+            text-decoration-line: underline;
+        }
+    }
+
+
+}
+
+#catalog,
+#about,
+#reviews,
+#questions {
+    padding-top: 80px;
+    margin-top: -80px;
+}

@@ -1,0 +1,70 @@
+.footer {
+
+    &__logo-img {
+        width: 160px;
+        height: 99px;
+
+        @media (width < $breakpoint) {
+        width: 93px;
+        height: 57px;
+        }
+    }
+
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 45px;
+
+        @media (width < $breakpoint) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__text {
+        color: #202020;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        margin-bottom: 15px;
+        text-transform: lowercase;
+        @media (width < $breakpoint) {
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    &__btn {
+        border-radius: 74px;
+        background: $color_accent;
+        padding: 6px 102px;
+        display: inline-block;
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        @media (width < $breakpoint) {
+           margin-bottom: 40px;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        &-num {
+            color: #202020;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        @media (width < $breakpoint) {
+            align-items: center;
+        }
+    }
+
+
+}
