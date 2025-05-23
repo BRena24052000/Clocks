@@ -22,7 +22,7 @@ body {
     font-family: $font_family;
     color: $text_main;
     background-image: url('../img/gridBg.svg');
-    // background-color: $bg_main;
+    overflow-x: hidden;
 }
 
 .container {

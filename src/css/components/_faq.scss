@@ -38,6 +38,7 @@
 
         @media (width < $breakpoint) {
             padding: 12px 20px;
+            border-radius: 20px;
         }
 
     }
@@ -77,7 +78,7 @@
 
         &-body {
             overflow: hidden;
-            border-radius: 35px;
+            border-radius: 0;
         }
     }
 

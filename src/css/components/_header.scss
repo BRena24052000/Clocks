@@ -32,6 +32,10 @@ html {
         align-items: center;
         justify-content: space-between;
         padding: 0 16px;
+
+        @media (max-width: $breakpoint) {
+            justify-content: center;
+        }
     }
 
     &__logo {

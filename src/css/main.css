@@ -48,6 +48,7 @@ body {
   font-family: "Unbounded", "Helvetica", " Arial", sans-serif;
   color: #000;
   background-image: url("../img/gridBg.svg");
+  overflow-x: hidden;
 }
 
 .container {
@@ -101,6 +102,11 @@ html {
   align-items: center;
   justify-content: space-between;
   padding: 0 16px;
+}
+@media (max-width: 1000px) {
+  .header__wrapper {
+    justify-content: center;
+  }
 }
 .header__logo {
   font-weight: bold;
@@ -191,6 +197,7 @@ html {
   .intro__title {
     font-size: 16px;
     margin-bottom: 400px;
+    text-align: center;
   }
   .intro__title strong {
     font-size: 24px;
@@ -206,6 +213,7 @@ html {
     gap: 6px;
     order: 2;
     margin-bottom: 0;
+    justify-content: center;
   }
 }
 .intro__icon-link {
@@ -412,6 +420,7 @@ html {
 @media (width < 1000px) {
   .boxClocks__wrapper {
     background-image: none;
+    padding-top: 0;
   }
 }
 .boxClocks__title {
@@ -421,6 +430,7 @@ html {
   .boxClocks__title {
     font-weight: 500;
     font-size: 24px;
+    margin-bottom: 40px;
   }
 }
 .boxClocks__block {
@@ -488,6 +498,7 @@ html {
   .reviews__title {
     font-weight: 500;
     font-size: 24px;
+    margin-bottom: 40px;
   }
 }
 .reviews__people {
@@ -632,6 +643,7 @@ html {
 @media (width < 1000px) {
   .faq__item {
     padding: 12px 20px;
+    border-radius: 20px;
   }
 }
 .faq__question {
@@ -666,7 +678,7 @@ html {
 }
 .faq__content-body {
   overflow: hidden;
-  border-radius: 35px;
+  border-radius: 0;
 }
 .faq__details[open] .faq__question svg {
   rotate: 45deg;
